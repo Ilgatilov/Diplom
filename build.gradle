@@ -8,7 +8,6 @@ group 'ru.netology'
 version '1.0-SNAPSHOT'
 
 allure {
-    autoconfigure = true
     version = '2.17.1'
 
     useJUnit5 {
@@ -27,13 +26,13 @@ repositories {
 dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter:5.8.2'
     testImplementation 'com.codeborne:selenide:6.1.2'
-    testImplementation 'com.github.javafaker:javafaker:1.0.2'
-    testImplementation 'io.rest-assured:rest-assured:4.4.0'
-    testImplementation 'com.google.code.gson:gson:2.8.9'
-    testImplementation 'mysql:mysql-connector-java:8.0.25'
-    testImplementation 'org.hamcrest:hamcrest-library:2.2'
-    testImplementation 'org.postgresql:postgresql:42.3.1'
     testImplementation 'io.qameta.allure:allure-selenide:2.17.2'
+    testImplementation 'mysql:mysql-connector-java:8.0.25'
+    testImplementation 'org.postgresql:postgresql:42.3.1'
+    testImplementation 'commons-dbutils:commons-dbutils:1.7'
+    testImplementation 'io.rest-assured:rest-assured:4.4.0'
+    testImplementation 'io.qameta.allure:allure-rest-assured:2.17.2'
+    testImplementation 'com.google.code.gson:gson:2.8.9'
 }
 
 test {

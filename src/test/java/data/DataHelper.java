@@ -16,52 +16,54 @@ public class DataHelper {
     static int year = 26 + random.nextInt(99 - 26);
     static String wrongYear = Integer.toString(year);
 
-    private CardInformation DataHelper() {
+    private DataHelper() {
 
-        public static CardInformation getValidCardInformation () {
-            return new CardInformation("4444 4444 4444 4441", "22", "11", faker.name().fullName(), correctCVC);
-        }
+    }
 
-        public static CardInformation getInvalidCardInformation () {
-            return new CardInformation("4444 4444 4444 4442", "22", "11", faker.name().fullName(), correctCVC);
-        }
+    public static CardInformation getValidCardInformation() {
+        return new CardInformation("4444 4444 4444 4441", "22", "11", faker.name().fullName(), correctCVC);
+    }
 
-        public static CardInformation getCardInformationWithWrongLongCardNumber () {
+    public static CardInformation getInvalidCardInformation() {
+        return new CardInformation("4444 4444 4444 4442", "22", "11", faker.name().fullName(), correctCVC);
+    }
 
-            return new CardInformation("4444 4444 4444 444", "22", "11", faker.name().fullName(), correctCVC);
-        }
+    public static CardInformation getCardInformationWithWrongLongCardNumber() {
 
-        public static CardInformation getCardInformationWithShortestCardNumber () {
+        return new CardInformation("4444 4444 4444 444", "22", "11", faker.name().fullName(), correctCVC);
+    }
 
-            return new CardInformation(wrongMonthNumber, "22", "11", faker.name().fullName(), correctCVC);
-        }
+    public static CardInformation getCardInformationWithShortestCardNumber() {
 
-        public static CardInformation getCardInformationWithWrongMonth () {
-            return new CardInformation("4444 4444 4444 4441", "22", wrongMonthNumber, faker.name().fullName(), correctCVC);
-        }
+        return new CardInformation(wrongMonthNumber, "22", "11", faker.name().fullName(), correctCVC);
+    }
 
-        public static CardInformation getCardInformationWithWrongYear () {
-            return new CardInformation("4444 4444 4444 4441", wrongYear, "12", faker.name().fullName(), correctCVC);
-        }
+    public static CardInformation getCardInformationWithWrongMonth() {
+        return new CardInformation("4444 4444 4444 4441", "22", wrongMonthNumber, faker.name().fullName(), correctCVC);
+    }
 
-        public static CardInformation getCardInformationWithWrongYearWithOneNumber () {
-            return new CardInformation("4444 4444 4444 4441", wrongMonthNumber, "12", faker.name().fullName(), correctCVC);
-        }
+    public static CardInformation getCardInformationWithWrongYear() {
+        return new CardInformation("4444 4444 4444 4441", wrongYear, "12", faker.name().fullName(), correctCVC);
+    }
 
-        public static CardInformation getCardInformationWithWrongCvc () {
-            return new CardInformation("4444 4444 4444 4441", "22", "11", faker.name().fullName(), wrongYear);
-        }
+    public static CardInformation getCardInformationWithWrongYearWithOneNumber() {
+        return new CardInformation("4444 4444 4444 4441", wrongMonthNumber, "12", faker.name().fullName(), correctCVC);
+    }
 
-        public static CardInformation getCardInformationWithWrongHolderName () {
-            return new CardInformation("4444 4444 4444 4441", "22", "11", correctCVC, correctCVC);
-        }
+    public static CardInformation getCardInformationWithWrongCvc() {
+        return new CardInformation("4444 4444 4444 4441", "22", "11", faker.name().fullName(), wrongYear);
+    }
 
-        public static CardInformation getCardInformationWithoutName () {
-            return new CardInformation("4444 4444 4444 4441", "22", "11", " ", correctCVC);
-        }
+    public static CardInformation getCardInformationWithWrongHolderName() {
+        return new CardInformation("4444 4444 4444 4441", "22", "11", correctCVC, correctCVC);
+    }
+
+    public static CardInformation getCardInformationWithoutName() {
+        return new CardInformation("4444 4444 4444 4441", "22", "11", " ", correctCVC);
     }
 
     @Value
     public static class CardInformation {
         private String number, year, month, holder, cvc;
     }
+}
