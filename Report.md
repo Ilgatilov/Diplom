@@ -18,7 +18,7 @@
 
 ### Отчет о тестировании
 
-![allure report](C:\Users\User\Desktop\Скрин.диплом\Allure Report.jpg)
+![allure report](https://github.com/Ilgatilov/Diplom/blob/main/Screenshot/Allure%20Report.jpg)
 
 
 ### Общие рекомендации
