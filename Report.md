@@ -17,7 +17,8 @@
 Неуспешных 22 - 56,25%
 
 ### Отчет о тестировании
-![allure report4](https://drive.google.com/file/d/1mEzVW4uLNHMUb7ElPPIQvh665TWRBgvy/view?usp=sharing)
+
+![allure report](C:\Users\User\Desktop\Скрин.диплом\Allure Report.jpg)
 
 
 ### Общие рекомендации
