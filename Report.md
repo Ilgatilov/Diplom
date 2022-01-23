@@ -18,7 +18,11 @@
 
 ### Отчет о тестировании
 
+<<<<<<< HEAD
 ![AllureReport](https://github.com/Ilgatilov/Diplom/blob/main/Screenshot/Allure%20Report.jpg)
+=======
+![allure report](https://github.com/Ilgatilov/Diplom/blob/main/Screenshot/Allure%20Report.jpg)
+>>>>>>> fe24825635c32e3aee0fdb9bea02d900f5bca6f6
 
 
 ### Общие рекомендации
